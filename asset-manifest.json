@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/test_tweetcards/static/css/main.edaea69e.css",
+    "main.js": "/test_tweetcards/static/js/main.db03c077.js",
+    "static/media/picture2_1.svg": "/test_tweetcards/static/media/picture2_1.23dcbc3cc8ccc9682f24b4acffb5efb2.svg",
+    "static/media/Montserrat-SemiBold.ttf": "/test_tweetcards/static/media/Montserrat-SemiBold.62b8eee010e3957d425f.ttf",
+    "static/media/Montserrat-Medium.ttf": "/test_tweetcards/static/media/Montserrat-Medium.a281f04d4c8926e7dea1.ttf",
+    "static/media/logo.svg": "/test_tweetcards/static/media/logo.e917114d7945c04c85a8946a331d28b6.svg",
+    "index.html": "/test_tweetcards/index.html",
+    "main.edaea69e.css.map": "/test_tweetcards/static/css/main.edaea69e.css.map",
+    "main.db03c077.js.map": "/test_tweetcards/static/js/main.db03c077.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.edaea69e.css",
+    "static/js/main.db03c077.js"
+  ]
+}
