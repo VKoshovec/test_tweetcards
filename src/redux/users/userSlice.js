@@ -5,6 +5,7 @@ const usersSlise = createSlice({
     name: 'users',
     initialState: {
         users: [],
+        totlaUsers: 0,
         isLoading: false,
         error: null,
     },
@@ -15,7 +16,8 @@ const usersSlise = createSlice({
             state.error = null;
         })
         .addCase(fetchAllUsers.fulfilled, (state, { payload }) => {
-            state.users = payload;
+            state.users.push(...payload.current);
+            state.totlaUsers = payload.total;
             state.isLoading = false;
             state.error = null;
         })
@@ -28,7 +30,10 @@ const usersSlise = createSlice({
             state.error = null;
         })
         .addCase(fetchUserById.fulfilled, (state, { payload }) => {
-            state.users = { ...state.users, ...payload }
+
+            const userIndex = state.users.findIndex(user => user.id === payload.id);
+            state.users.splice(userIndex, 1, payload);
+            
             state.isLoading = false;
             state.error = null;
         })

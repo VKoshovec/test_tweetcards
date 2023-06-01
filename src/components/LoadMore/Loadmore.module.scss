@@ -1,0 +1,18 @@
+@import '../../styles/index.scss';
+
+.loadmore {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  background-color: transparent;
+  font-family: var(--fontFamily);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: uppercase;
+  border-radius: 10px;
+  box-shadow: 0px 3.43693px 3.43693px #EBD8FF;
+  padding: 10px;
+}

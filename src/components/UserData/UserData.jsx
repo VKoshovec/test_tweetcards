@@ -16,17 +16,17 @@ const UserData = ({id, buttonType, tweets, followers}) => {
     const onHandleClick = (id) => {
         const userForUpd = users.filter(el => el.id === id)[0];
 
-        let fetchData;
+        let newData;
 
         if(buttonType) {
-            fetchData = {...userForUpd, following: false, followers: followers - 1};
+            newData = { following: false, followers: followers - 1};
         } 
 
         if(!buttonType) {
-            fetchData = {...userForUpd, following: true, followers: followers + 1};
+            newData = { following: true, followers: followers + 1};
         } 
 
-        dispatch(fetchUserById(id, fetchData));
+        dispatch(fetchUserById({id, newData}));
         
     }
 
