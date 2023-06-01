@@ -4,16 +4,16 @@ import { ReactComponent as CardHeadsvg }from '../../images/picture2_1.svg';
 import UserLogo from '../UserLogo/UserLogo';
 import UserData from '../UserData/UserData';
 
-const UserCard = () => {
+const UserCard = ({ avatar, tweets, followers }) => {
     return (
         <div className={ scss.usercard }>
             <div className={ scss.usercardheader }>
                 <CardLogo className={ scss.usercardlogo }/>
                 <CardHeadsvg className={ scss.usercardsvg }/>
             </div>
-                <UserLogo/>  
+                <UserLogo logo={ avatar }/>  
             <div className={ scss.usercardstripe }></div>
-                 <UserData/>
+                <UserData buttonType={ false } tweets={ tweets } followers={ followers }/>
         </div>
     )
 };

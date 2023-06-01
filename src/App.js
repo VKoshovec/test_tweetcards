@@ -1,10 +1,8 @@
-import UserCard from '../src/components/UserCard/UserCard';
+import UsersPage from './pages/users/Userspage';
 
 function App() {
   return (
-    <div className="App">
-      <UserCard/>
-    </div>
+      <UsersPage/>
   );
 }
 

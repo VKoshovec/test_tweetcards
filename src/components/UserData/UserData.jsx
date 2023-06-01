@@ -6,6 +6,8 @@ const UserData = ({buttonType, tweets, followers}) => {
     const buttonTypeClass = buttonType ? scss.userdatabuttonfollowing: scss.userdatabuttonfollow ;
     const buttonCaption = buttonType ? 'Following' : 'Follow';
 
+    const followersNormalize = followers.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
+
     return(
         <div className={ scss.userdata }>
             <p className={ scss.userdatatweets }>
@@ -15,7 +17,7 @@ const UserData = ({buttonType, tweets, followers}) => {
             </p>
             <p className={ scss.userdatafollowers }>
 
-               { `${ followers } followers` }
+               { `${ followersNormalize } followers` }
             </p>
 
             <button type="button" 
