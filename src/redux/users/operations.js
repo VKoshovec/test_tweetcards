@@ -1,5 +1,5 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import { getAllUsers } from '../../api/mockApi/mockApi';
+import { getAllUsers, updUserById } from '../../api/mockApi/mockApi';
 
 export const fetchAllUsers = createAsyncThunk(
   "users/fetchAllUsers",
@@ -9,6 +9,18 @@ export const fetchAllUsers = createAsyncThunk(
         return responce.data;
     } catch (error) {
         return thunkApi.rejectWithValue(error);
+    }
+  }
+);
+
+export const fetchUserById = createAsyncThunk(
+  "users/fetchUserById",
+  async({id, newData}, thunkApi) => {
+    try {
+      const responce = await updUserById(id, newData);
+      return responce.data;
+    } catch (error) {
+      return thunkApi.rejectWithValue(error);
     }
   }
 );

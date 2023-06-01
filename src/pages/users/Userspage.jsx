@@ -14,11 +14,16 @@ const UsersPage =() => {
         dispatch(fetchAllUsers());
     }, [dispatch]);
 
-    
-
     return (
        <>
-       { allUsers.map(el => <UserCard key={ el.id } tweets={ el.tweets } followers={ el.followers } avatar={ el.avatar }/>) }
+       { allUsers.length === 0 && <p>No results</p> }
+       { allUsers.map(el => <UserCard 
+       key={ el.id } 
+       id={ el.id }
+       tweets={ el.tweets } 
+       followers={ el.followers } 
+       avatar={ el.avatar } 
+       following={ el.following }/>) }
        </>
     )
 };
