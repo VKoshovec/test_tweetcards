@@ -1,3 +1,7 @@
+:root{
+  --fontFamily: 'Montserrat';
+}
+
 @font-face {
     font-family: 'Montserrat';
     font-weight: 500;
@@ -5,10 +9,10 @@
     url('../styles/fonts/Montserrat-Medium.ttf') format('truetype');
   }
   
-  @font-face {
+@font-face {
     font-family: 'Manrope';
-    font-weight: 700;
+    font-weight: 600;
     src: local('Montserrat-SemiBold'),
     url('../styles/fonts/Montserrat-SemiBold.ttf') format('truetype');
-  }
+}
   

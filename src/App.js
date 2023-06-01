@@ -1,9 +1,9 @@
-import Usercard from './components/Usercard/Usercard';
+import UserCard from '../src/components/UserCard/UserCard';
 
 function App() {
   return (
     <div className="App">
-      <Usercard />
+      <UserCard/>
     </div>
   );
 }

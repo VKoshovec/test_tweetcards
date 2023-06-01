@@ -1,6 +1,6 @@
 import scss from '../UserLogo/UserLogo.module.scss'
 
-const UserLogo = () => {
+const UserLogo = ({logo}) => {
     return (
         <div className={ scss.userlogo }>
         </div>
