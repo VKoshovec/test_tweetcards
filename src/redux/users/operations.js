@@ -7,7 +7,7 @@ export const fetchAllUsers = createAsyncThunk(
     try {
         const totalResponce = await getTotlaUsers();
         const responce = await getAllUsers(params);
-        return {current: responce.data, total: totalResponce.data.length};
+        return { current: responce.data, total: totalResponce.data.length };
     } catch (error) {
         return thunkApi.rejectWithValue(error);
     }
