@@ -3,10 +3,10 @@ import { getTotlaUsers, getAllUsers, updUserById } from '../../api/mockApi/mockA
 
 export const fetchAllUsers = createAsyncThunk(
   "users/fetchAllUsers",
-  async (params, thunkApi) => {
+  async ({ page, filter }, thunkApi) => {
     try {
         const totalResponce = await getTotlaUsers();
-        const responce = await getAllUsers(params);
+        const responce = await getAllUsers({ page, filter });
         return { current: responce.data, total: totalResponce.data.length };
     } catch (error) {
         return thunkApi.rejectWithValue(error);

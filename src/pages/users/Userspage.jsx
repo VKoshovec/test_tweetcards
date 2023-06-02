@@ -5,6 +5,7 @@ import { useState, useEffect } from "react";
 
 import UserCard from "../../components/Usercard/Usercard";
 import LoadMore from "../../components/LoadMore/LoadMore";
+import UserFilter from "../../components/UserFilter/UserFilter";
 
 const UsersPage =() => {
 
@@ -18,19 +19,20 @@ const UsersPage =() => {
     const [page, setPage] = useState(1);
 
     useEffect(()=>{
-        dispatch(fetchAllUsers(page));
+        dispatch(fetchAllUsers({page}));
     }, [dispatch]);
 
     const onClick = () => {
         if (page < totalPages) {
             setPage(page + 1);
-            dispatch(fetchAllUsers(page + 1));
+            dispatch(fetchAllUsers({page: page + 1}));
         }
     }
 
     return (
        <>
        { allUsers.length === 0 && <p>No results</p> }
+       <UserFilter/>
        { allUsers.map(el => <UserCard 
        key={ el.id } 
        id={ el.id }
