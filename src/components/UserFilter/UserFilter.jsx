@@ -7,12 +7,15 @@ const UserFilter = () => {
     const defaultOption = options[0];
 
     return(
-    <div>
+    <div className={ scss.filter }>
       <Dropdown 
-      options={options} 
-    //   onChange={this._onSelect} 
-      value={defaultOption} 
-      placeholder="Select an option" />
+            className={ scss.dropdown }
+            menuClassName={ scss.dropdownmenu }
+            placeholderClassName ={ scss.dropdownplaceholder }
+            options={options} 
+       //   onChange={this._onSelect} 
+            value={defaultOption} 
+            placeholder="Select an option" />
     </div>
     );
 };
