@@ -8,6 +8,7 @@ const usersSlise = createSlice({
         totlaUsers: 0,
         isLoading: false,
         error: null,
+        filtr: 'show all',
     },
     extraReducers: builder => {
         builder
@@ -16,8 +17,19 @@ const usersSlise = createSlice({
             state.error = null;
         })
         .addCase(fetchAllUsers.fulfilled, (state, { payload }) => {
-            state.users.push(...payload.current);
-            state.totlaUsers = payload.total;
+
+            if (state.filtr === payload.filter) {
+                state.users.push(...payload.current);
+                state.totlaUsers = payload.total;
+            }
+
+            if (state.filtr !== payload.filter) {
+                state.users = [];
+                state.filtr = payload.filter;
+                state.users = payload.current;
+                state.totlaUsers = payload.total;
+            }
+
             state.isLoading = false;
             state.error = null;
         })
@@ -37,7 +49,7 @@ const usersSlise = createSlice({
             state.isLoading = false;
             state.error = null;
         })
-        .addCase(fetchUserById, (state, { payload })=> {
+        .addCase(fetchUserById.rejected, (state, { payload })=> {
             state.isLoading = false;
             state.error = payload;
         })

@@ -5,9 +5,9 @@ export const fetchAllUsers = createAsyncThunk(
   "users/fetchAllUsers",
   async ({ page, filter }, thunkApi) => {
     try {
-        const totalResponce = await getTotlaUsers();
+        const totalResponce = await getTotlaUsers({ filter });
         const responce = await getAllUsers({ page, filter });
-        return { current: responce.data, total: totalResponce.data.length };
+        return { current: responce.data, total: totalResponce.data.length, filter };
     } catch (error) {
         return thunkApi.rejectWithValue(error);
     }

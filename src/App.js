@@ -1,8 +1,8 @@
-import UsersPage from './pages/users/Userspage';
+import { Router } from './components/Routing/Router';
 
 function App() {
   return (
-      <UsersPage/>
+      <Router />
   );
 }
 

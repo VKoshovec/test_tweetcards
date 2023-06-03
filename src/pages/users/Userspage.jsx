@@ -11,28 +11,32 @@ const UsersPage =() => {
 
     const allUsers = useSelector(selectAllUsers);
     const totalUsers = useSelector(selectTotlaUsers);
-
     const totalPages = totalUsers/3;
-
+    
     const dispatch = useDispatch();
 
     const [page, setPage] = useState(1);
+    const [filter, setFilter] = useState();
 
     useEffect(()=>{
-        dispatch(fetchAllUsers({page}));
-    }, [dispatch]);
+        dispatch(fetchAllUsers({ page, filter }));
+    }, [dispatch, filter, page]);
 
     const onClick = () => {
         if (page < totalPages) {
             setPage(page + 1);
-            dispatch(fetchAllUsers({page: page + 1}));
         }
+    }
+
+    const filterChange = (e) => {
+       setFilter(e.value);
+       setPage(1);
     }
 
     return (
        <>
        { allUsers.length === 0 && <p>No results</p> }
-       <UserFilter/>
+       <UserFilter onChange={ filterChange }/>
        { allUsers.map(el => <UserCard 
        key={ el.id } 
        id={ el.id }
