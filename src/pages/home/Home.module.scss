@@ -1,0 +1,49 @@
+@import '../../styles/index.scss';
+
+.header {
+    background: linear-gradient(114.99deg, #471CA9 -0.99%, #5736A3 54.28%, #4B2A99 78.99%);
+    height: 60px;
+    padding: 0px;
+
+    &_logo{
+       margin-left: 20px;
+       margin-top: 20px;
+    };
+
+};
+
+.title{
+    margin-left: auto;
+    margin-right: auto;
+    width: 280px;
+    text-transform: uppercase;
+    color:  #4B2A99;
+}
+
+.hero {
+    width: 100%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-shadow: 0px 4.39163px 4.39163px rgba(0, 0, 0, 0.06), inset 0px -2.19582px 4.39163px #AE7BE3, inset 0px 4.39163px 3.29372px #FBF8FF;
+}
+
+.nav {
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 150px;
+    height: 90px;
+  
+    &_btn{
+
+        width: 150px;
+        height: 90px;
+        border-radius: 50%;
+        font-size: 20px;
+        font-weight: 600;
+        color: #EBD8FF;
+        background: linear-gradient(114.99deg, #471CA9 -0.99%, #5736A3 54.28%, #4B2A99 78.99%);
+        box-shadow:  4px 4px 4px #AE7BE3;
+
+    }
+}
