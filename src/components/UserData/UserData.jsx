@@ -1,7 +1,6 @@
 import classNames from 'classnames';
 import scss from '../UserData/UserData.module.scss';
-import { useSelector, useDispatch  } from 'react-redux';
-import { selectAllUsers} from '../../redux/users/selectors';
+import { useDispatch  } from 'react-redux';
 import { fetchUserById } from '../../redux/users/operations';
 
 const UserData = ({id, buttonType, tweets, followers}) => {
@@ -10,11 +9,9 @@ const UserData = ({id, buttonType, tweets, followers}) => {
     const buttonCaption = buttonType ? 'Following' : 'Follow';
     const followersNormalize = followers.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
 
-    const users = useSelector(selectAllUsers);
     const dispatch = useDispatch();
    
     const onHandleClick = (id) => {
-        const userForUpd = users.filter(el => el.id === id)[0];
 
         let newData;
 

@@ -1,5 +1,5 @@
 import { createSlice } from "@reduxjs/toolkit";
-import { fetchAllUsers, fetchUserById } from "./operations";
+import { fetchAllUsers, fetchUserById, fetchEmpty } from "./operations";
 
 const usersSlise = createSlice({
     name: 'users',
@@ -52,6 +52,13 @@ const usersSlise = createSlice({
         .addCase(fetchUserById.rejected, (state, { payload })=> {
             state.isLoading = false;
             state.error = payload;
+        })
+        .addCase(fetchEmpty.fulfilled, (state, { payload })=> {
+            state.isLoading = false;
+            state.users = [];
+            state.filtr = 'show all';
+            state.totlaUsers = 0;
+            state.error = null;
         })
     },
 });

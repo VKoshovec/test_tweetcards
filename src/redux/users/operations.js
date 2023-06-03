@@ -26,3 +26,10 @@ export const fetchUserById = createAsyncThunk(
     }
   }
 );
+
+export const fetchEmpty = createAsyncThunk(
+  "users/Empty",
+  async(_, thunkApi) => {
+      return;
+  }
+);

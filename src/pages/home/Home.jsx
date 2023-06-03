@@ -5,7 +5,9 @@ import { useNavigate } from "react-router-dom";
 
 const HomePage =()=> {
 
-    const nav = useNavigate();
+    const navigate = useNavigate();
+
+    const onClick = () => { navigate('/tweets', { replace: true }) };
 
     return (
     <div>
@@ -19,7 +21,7 @@ const HomePage =()=> {
                <button 
                type='button' 
                className={ scss.nav_btn }
-               onClick={ () => nav ('/tweets', { replace: true }) }
+               onClick={ onClick }
                > WATCH...
                </button>
             </div>

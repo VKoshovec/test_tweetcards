@@ -1,0 +1,38 @@
+.nav {
+    padding-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 70px;
+    height: 60px;
+
+    @media screen and (min-width:768px) {
+        margin-left: 20px; 
+        position: absolute;
+        padding-top: 0px;
+    }
+  
+    &_btn{
+
+        width: 70px;
+        height: 50px;
+        border-radius: 50%;
+        font-size: 20px;
+        font-weight: 600;
+        color: #EBD8FF;
+        background: linear-gradient(114.99deg, #471CA9 -0.99%, #5736A3 54.28%, #4B2A99 78.99%);
+        box-shadow:  4px 4px 4px #AE7BE3;
+
+    }
+}
+
+.grid {
+
+    padding-top: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    @media screen and (min-width:768px) {
+        padding-top: 50px;
+    }
+}
