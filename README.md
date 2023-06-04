@@ -4,7 +4,7 @@ This project was created with [Create React App](https://github.com/facebook/cre
 
 Start page - (https://vkoshovec.github.io/test_tweetcards).
 
-BackEnd service- https://mockapi.io/projects/64789f21362560649a2e2598.
+BackEnd service- (https://mockapi.io/projects/64789f21362560649a2e2598).
 
 Used packages: 
 
