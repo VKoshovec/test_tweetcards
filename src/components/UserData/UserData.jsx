@@ -5,7 +5,7 @@ import { fetchUserById } from '../../redux/users/operations';
 
 const UserData = ({id, buttonType, tweets, followers}) => {
 
-    const buttonTypeClass = buttonType ? scss.userdatabuttonfollowing: scss.userdatabuttonfollow ;
+    const buttonTypeClass = buttonType ? scss.userdata_button_following: scss.userdata_button_follow ;
     const buttonCaption = buttonType ? 'Following' : 'Follow';
     const followersNormalize = followers.toString().replace(/\B(?<!\.\d*)(?=(\d{3})+(?!\d))/g, ",");
 
@@ -29,19 +29,19 @@ const UserData = ({id, buttonType, tweets, followers}) => {
 
     return(
         <div className={ scss.userdata }>
-            <p className={ scss.userdatatweets }>
+            <p className={ scss.userdata_tweets }>
 
                 { `${ tweets } tweets` }
 
             </p>
-            <p className={ scss.userdatafollowers }>
+            <p className={ scss.userdata_followers }>
 
                { `${ followersNormalize } followers` }
             </p>
 
             <button type="button" 
             onClick={ () => onHandleClick(id) }
-            className = {classNames( scss.userdatabutton, buttonTypeClass )}>
+            className = {classNames( scss.userdata_button, buttonTypeClass )}>
 
                {buttonCaption}
                

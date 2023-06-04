@@ -8,15 +8,14 @@ const UserFilter = ({ onChange }) => {
     
     return(
     <div className={ scss.filter }>
-      <h2 className={ scss.filtertitle }>Results</h2>  
+      <h2 className={ scss.filter_title }>Results</h2>  
       <Dropdown 
             className={ scss.dropdown }
-            menuClassName={ scss.dropdownmenu }
-            placeholderClassName ={ scss.dropdownplaceholder }
+            menuClassName={ scss.dropdown_menu }
+            placeholderClassName ={ scss.dropdown_placeholder }
             options={options} 
             onChange={ (e) => onChange(e) } 
-            value={defaultOption} 
-            placeholder="Select an option" />
+            value={defaultOption}/>
     </div>
     );
 };

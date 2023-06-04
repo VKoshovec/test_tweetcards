@@ -17,19 +17,19 @@
     color: #EBD8FF;
     text-transform: uppercase;
 
-    &tweets{
+    &_tweets{
         margin: 0px;
         padding: 0px;
         margin-bottom: 16px;
     };
 
-    &followers{
+    &_followers{
         margin: 0px;
         padding: 0px;
         margin-bottom: 26px;
     };
 
-    &button{
+    &_button{
 
         font-family: var(--fontFamily);
         font-weight: 600;
@@ -42,11 +42,11 @@
         border-radius: 10.3108px;
         text-transform: uppercase;
 
-        &follow{
+        &_follow{
             background-color: #EBD8FF;
         }
 
-        &following{
+        &_following{
             background-color: #5CD3A8;
         }
     };
