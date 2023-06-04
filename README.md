@@ -4,6 +4,22 @@ This project was created with [Create React App](https://github.com/facebook/cre
 
 Start page - (https://vkoshovec.github.io/test_tweetcards).
 
+BackEnd service- https://mockapi.io/projects/64789f21362560649a2e2598.
+
+Used packages: 
+
+    "axios": "^1.4.0",
+    "classnames": "^2.3.2",
+    "gh-pages": "^5.0.0",
+    "notiflix": "^3.2.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-dropdown": "^1.11.0",
+    "react-redux": "^8.0.7",
+    "react-router-dom": "^6.11.2",
+    "react-scripts": "5.0.1",
+    "sass": "^1.62.1"; 
+
 ## Available Scripts
 In the project directory, you can run:
 
