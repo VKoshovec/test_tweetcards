@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.js": "/test_tweetcards/static/js/main.3f6c711e.js",
+    "main.js": "/test_tweetcards/static/js/main.008dc951.js",
     "static/css/879.30fe3dfd.chunk.css": "/test_tweetcards/static/css/879.30fe3dfd.chunk.css",
-    "static/js/879.47b19ece.chunk.js": "/test_tweetcards/static/js/879.47b19ece.chunk.js",
+    "static/js/879.cdd5fa48.chunk.js": "/test_tweetcards/static/js/879.cdd5fa48.chunk.js",
     "static/css/965.f244b161.chunk.css": "/test_tweetcards/static/css/965.f244b161.chunk.css",
-    "static/js/965.75dedae0.chunk.js": "/test_tweetcards/static/js/965.75dedae0.chunk.js",
-    "static/js/721.7a71a07e.chunk.js": "/test_tweetcards/static/js/721.7a71a07e.chunk.js",
+    "static/js/965.44892365.chunk.js": "/test_tweetcards/static/js/965.44892365.chunk.js",
+    "static/js/721.055af407.chunk.js": "/test_tweetcards/static/js/721.055af407.chunk.js",
     "static/media/picture2_1.svg": "/test_tweetcards/static/media/picture2_1.23dcbc3cc8ccc9682f24b4acffb5efb2.svg",
     "static/media/Montserrat-SemiBold.ttf": "/test_tweetcards/static/media/Montserrat-SemiBold.62b8eee010e3957d425f.ttf",
     "static/media/Montserrat-Medium.ttf": "/test_tweetcards/static/media/Montserrat-Medium.a281f04d4c8926e7dea1.ttf",
     "static/media/logo.svg": "/test_tweetcards/static/media/logo.e917114d7945c04c85a8946a331d28b6.svg",
     "index.html": "/test_tweetcards/index.html",
-    "main.3f6c711e.js.map": "/test_tweetcards/static/js/main.3f6c711e.js.map",
+    "main.008dc951.js.map": "/test_tweetcards/static/js/main.008dc951.js.map",
     "879.30fe3dfd.chunk.css.map": "/test_tweetcards/static/css/879.30fe3dfd.chunk.css.map",
-    "879.47b19ece.chunk.js.map": "/test_tweetcards/static/js/879.47b19ece.chunk.js.map",
+    "879.cdd5fa48.chunk.js.map": "/test_tweetcards/static/js/879.cdd5fa48.chunk.js.map",
     "965.f244b161.chunk.css.map": "/test_tweetcards/static/css/965.f244b161.chunk.css.map",
-    "965.75dedae0.chunk.js.map": "/test_tweetcards/static/js/965.75dedae0.chunk.js.map",
-    "721.7a71a07e.chunk.js.map": "/test_tweetcards/static/js/721.7a71a07e.chunk.js.map"
+    "965.44892365.chunk.js.map": "/test_tweetcards/static/js/965.44892365.chunk.js.map",
+    "721.055af407.chunk.js.map": "/test_tweetcards/static/js/721.055af407.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.3f6c711e.js"
+    "static/js/main.008dc951.js"
   ]
 }
